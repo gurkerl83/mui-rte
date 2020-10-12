@@ -132,7 +132,7 @@ const UploadImagePopover: FunctionComponent<IUploadImagePopoverProps> = (props) 
                         </IconButton>
                     </label>
                 </Grid>
-                <Grid item container xs={12} justify="flex-end">
+                <Grid item container xs={12} alignItems="flex-end">
                     <Button onClick={() => {
                         setState({
                             anchor: null,

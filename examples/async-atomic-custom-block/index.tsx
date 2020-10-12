@@ -148,7 +148,7 @@ const MyCardPopover: FunctionComponent<IMyCardPopoverProps> = (props) => {
                         placeholder="Type anything here..."
                     />
                 </Grid>
-                <Grid item container xs={12} justify="flex-end">
+                <Grid item container xs={12} alignItems="flex-end">
                     <Button onClick={() => {
                         setState({
                             anchor: null,

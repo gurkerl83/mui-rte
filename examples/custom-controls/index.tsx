@@ -50,7 +50,7 @@ const MyBlockComponent: FunctionComponent<TToolbarComponentProps> = (props) => {
             id={props.id}
             variant="contained"
             onMouseDown={props.onMouseDown}
-            color={props.active ? "primary": "default"}
+            color={props.active ? "primary": "inherit"}
             disabled={props.disabled}
         >
             My Block
