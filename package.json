@@ -1,6 +1,6 @@
 {
   "name": "@gurkerl83/mui-rte",
-  "version": "1.25.1",
+  "version": "1.25.2",
   "description": "Material-UI Rich Text Editor and Viewer",
   "keywords": [
     "material-ui",
@@ -24,7 +24,7 @@
     "watch": "cross-env NODE_ENV=development rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c",
     "test": "mocha -r ts-node/register test/setup.ts test/*.test.*",
-    "publish-nightly": "npm publish --access public --tag nightly"
+    "publish-nightly": "npm publish --access public"
   },
   "author": "Erik Lopez",
   "license": "MIT",
