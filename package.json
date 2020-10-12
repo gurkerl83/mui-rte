@@ -1,5 +1,5 @@
 {
-  "name": "mui-rte",
+  "name": "@gurkerl83/mui-rte",
   "version": "1.25.0",
   "description": "Material-UI Rich Text Editor and Viewer",
   "keywords": [
@@ -12,24 +12,27 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/niuware/mui-rte.git"
+    "url": "https://github.com/gurkerl83/mui-rte.git"
   },
   "bugs": {
-    "url": "https://github.com/niuware/mui-rte/issues"
+    "url": "https://github.com/gurkerl83/mui-rte/issues"
   },
-  "homepage": "https://github.com/niuware/mui-rte#readme",
+  "homepage": "https://github.com/gurkerl83/mui-rte#readme",
   "main": "dist/index.js",
   "scripts": {
     "serve": "cross-env webpack-dev-server --mode development",
     "watch": "cross-env NODE_ENV=development rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c",
-    "test": "mocha -r ts-node/register test/setup.ts test/*.test.*"
+    "test": "mocha -r ts-node/register test/setup.ts test/*.test.*",
+    "publish-nightly": "npm publish --access public --tag nightly"
   },
   "author": "Erik Lopez",
   "license": "MIT",
   "devDependencies": {
-    "@material-ui/core": "^4.10.2",
-    "@material-ui/icons": "^4.9.1",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^5.0.0-alpha.12",
+    "@material-ui/icons": "^5.0.0-alpha.11",
     "@types/chai": "^4.2.12",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -61,10 +64,12 @@
     "webpack-dev-server": "^3.11.0"
   },
   "peerDependencies": {
-    "@material-ui/core": ">=4.1.0 <5",
-    "@material-ui/icons": ">=4.1.0 <5",
+    "@material-ui/core": ">=4.1.0",
+    "@material-ui/icons": ">=4.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27"
   },
   "dependencies": {
     "@types/classnames": "^2.2.10",
